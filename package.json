@@ -2,7 +2,6 @@
   "name": "gulp-i18n-starter",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,14 +9,13 @@
     "type": "git",
     "url": "git+https://github.com/idmytro/gulp-i18n-starter.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/idmytro/gulp-i18n-starter/issues"
   },
   "homepage": "https://github.com/idmytro/gulp-i18n-starter#readme",
   "devDependencies": {
+    "browser-sync": "^2.27.5",
     "gulp": "^4.0.2",
     "gulp-html-i18n": "^0.16.0"
   }
