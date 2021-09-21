@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/idmytro/gulp-i18n-starter#readme",
   "devDependencies": {
+    "gulp": "^4.0.2",
     "gulp-html-i18n": "^0.16.0"
   }
 }
