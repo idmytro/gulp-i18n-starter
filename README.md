@@ -1,3 +1,9 @@
 # gulp-i18n-starter
 
-`yarn gulp`
+## Dev
+
+`npm run dev` or `yarn dev`
+
+## Build for deploy
+
+`npm run build` or `yarn build`

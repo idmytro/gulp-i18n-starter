@@ -13,7 +13,7 @@ const serve = () => {
   watch('public/*').on('change', reload);
 }
 
-const html = () => {
+const build = () => {
   return src('src/index.html')
     .pipe(i18n({
       langDir: './src/locales',
@@ -24,9 +24,11 @@ const html = () => {
     .pipe(dest('public'));
 }
 
-const watchI18n = () => watch(['src/index.html', 'src/locales/**/*.js'], html)
+const watchI18n = () => watch(['src/index.html', 'src/locales/**/*.js'], build)
+
+exports.build = build;
 
 exports.default = parallel(
-  series([html, serve]),
+  series([build, serve]),
   watchI18n,
 )
