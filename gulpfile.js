@@ -10,7 +10,7 @@ const serve = () => {
     }
   });
 
-  watch('public/*').on('change', reload);
+  watch('public/**/*').on('change', reload);
 }
 
 const build = () => {
